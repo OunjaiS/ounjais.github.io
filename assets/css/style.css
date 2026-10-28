@@ -469,3 +469,10 @@ img {
 .mobile-nav a.active {
     background: var(--color-accent);
 }
+
+/* Justified text leaves wide gaps on narrow screens */
+@media (max-width: 600px) {
+    .bio-text {
+        text-align: left;
+    }
+}
