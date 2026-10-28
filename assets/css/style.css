@@ -412,3 +412,16 @@ img {
         display: block;
     }
 }
+
+/* Bulleted lists inside content */
+.bullet-list {
+    padding-left: 1.25rem;
+}
+
+.bullet-list li {
+    margin-bottom: 0.5rem;
+}
+
+.bullet-list li:last-child {
+    margin-bottom: 0;
+}

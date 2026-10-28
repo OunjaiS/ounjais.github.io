@@ -34,7 +34,7 @@
                 <img src="images/profile.jpg" alt="Sarawut Ounjai" class="profile-image">
                 
                 <h1 class="profile-name">Sarawut Ounjai</h1>
-                <p class="profile-title">Data Scientist at Gosoft (Thailand) Co., Ltd.<br>PhD in Life Sciences</p>
+                <p class="profile-title">Applied AI Scientist<br>Data Scientist at Gosoft (CP ALL Group)<br>PhD, Imperial College London</p>
                 
                 <div class="profile-info">
                     <div class="profile-info-item">
@@ -43,7 +43,7 @@
                     </div>
                     <div class="profile-info-item">
                         <i class="fas fa-building"></i>
-                        <span>Gosoft (Thailand) Co., Ltd.</span>
+                        <span>Gosoft (Thailand) Co., Ltd. (CP ALL Group)</span>
                     </div>
                     <div class="profile-info-item">
                         <i class="ai ai-google-scholar"></i>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="profile-info-item">
                         <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/sarawut-ounjai-57701757" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/sarawut-ounjai/" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
@@ -82,72 +82,230 @@
             <p class="last-updated"><a href="files/CV_Sarawut_Ounjai.pdf" download>📄 Download Full CV (PDF)</a></p>
 
             <section class="section">
-                <h3 class="section-title">Education</h3>
-                
-                <div class="publication-item">
-                    <h4 class="publication-title">PhD in Life Sciences</h4>
-                    <p class="publication-authors">Imperial College London, United Kingdom</p>
-                    <p class="publication-venue">2018 – 2025</p>
-                    <p>Thesis: "Biodiversity of beetles: The phylogenetic composition of beetle communities across tropical forests of the world"</p>
-                </div>
+                <h3 class="section-title">Experience</h3>
 
                 <div class="publication-item">
-                    <h4 class="publication-title">M.Sc. Biology (GPA: 4.00)</h4>
-                    <p class="publication-authors">Chiang Mai University, Thailand</p>
-                    <p class="publication-venue">2013 – 2015</p>
-                    <p>Thesis: "Identification of Medicinal Plants in Zingiberaceae by Barcode DNA High-Resolution Melting Analysis (Bar-HRM) Method"</p>
-                </div>
-
-                <div class="publication-item">
-                    <h4 class="publication-title">B.Sc. Biology (GPA: 3.60, 1st Class Honours)</h4>
-                    <p class="publication-authors">Chiang Mai University, Thailand</p>
-                    <p class="publication-venue">2009 – 2012</p>
+                    <h4 class="publication-title">Data Scientist</h4>
+                    <p class="publication-authors">Gosoft (Thailand) Co., Ltd. (CP ALL Group) &middot; Data Science &amp; Data Engineering Unit, IT Service, Chiang Mai</p>
+                    <p class="publication-venue">November 2025 &ndash; Present</p>
+                    <ul class="bullet-list">
+                        <li><strong>Technical direction:</strong> set the approach for the unit&rsquo;s AI initiatives across five systems in retail vision, retrieval and LLM applications, covering model and architecture selection, experimental design, and the criteria a system must meet before it is judged ready.</li>
+                        <li><strong>Internal enablement:</strong> delivered four reusable AI capabilities adopted by other teams (store-image detection, SKU image retrieval, hybrid LLM verification, cross-store product matching), with the architecture documents, cost models, statements of work and user manuals that made adoption possible.</li>
+                        <li><strong>Evaluation standards:</strong> established the unit&rsquo;s benchmarking practice (ground-truth construction, held-out benchmarks, paired bootstrap confidence intervals, ablation and error analysis).</li>
+                        <li><strong>Modelling:</strong> fine-tune vision and vision-language models (SigLIP, DINOv3, ColQwen2) with LoRA and contrastive objectives; build retrieval stacks combining FAISS, BM25 and learned rerankers; design hybrid architectures pairing LLM reasoning with deterministic checks.</li>
+                        <li><strong>Infrastructure:</strong> reproducible GPU training and batch inference on Docker, Argo Workflows over Kubernetes, Bitbucket pipelines, MLflow tracking, and AWS/HPC compute.</li>
+                        <li><strong>Delivery record:</strong> closed 23 planned deliverables on schedule in H1/2026, each with a written sprint or evaluation report (58 technical documents).</li>
+                    </ul>
                 </div>
             </section>
 
             <section class="section">
-                <h3 class="section-title">Experience</h3>
-                
+                <h3 class="section-title">Flagship AI Projects</h3>
+
                 <div class="publication-item">
-                    <h4 class="publication-title">Data Scientist</h4>
-                    <p class="publication-authors">Gosoft (Thailand) Co., Ltd.</p>
-                    <p class="publication-venue">November 2025 – Present</p>
-                    <p>Data Science & Data Engineering Unit - Developing machine learning solutions and data-driven systems for enterprise applications.</p>
+                    <h4 class="publication-title">Cross-Retailer Promotion Price Comparison</h4>
+                    <p class="publication-authors">Production &middot; Vision + NLP + Multimodal LLM</p>
+                    <p class="publication-venue">2026</p>
+                    <ul class="bullet-list">
+                        <li>Five-stage retrieve-then-rerank pipeline (acquisition &rarr; promotion detection &rarr; text extraction &rarr; embedding retrieval &rarr; multimodal LLM reranking) matching competitor promotions to equivalent in-house products.</li>
+                        <li>Retriever reached Acc@1 80.7% and Recall@10 97.2%; multimodal LLM reranking lifted end-to-end Acc@1 to <strong>95.7%</strong>.</li>
+                        <li>Abstention mechanism at a 98.0% true-negative rate with zero false rejections, so unmatched promotions are flagged rather than mismatched.</li>
+                        <li>Manuscript being finalised for submission to <em>Scientific Reports</em>.</li>
+                    </ul>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">Product-on-Shelf Compliance</h4>
+                    <p class="publication-authors">Production &middot; Computer Vision</p>
+                    <p class="publication-venue">2026</p>
+                    <ul class="bullet-list">
+                        <li>Detects products in a shelf photograph, identifies each SKU and checks the arrangement against the planogram.</li>
+                        <li><strong>97.3%</strong> filtered detection recall with YOLO11 (benchmarked against RT-DETR/RF-DETR); <strong>94.4%</strong> top-1 and 98.6% top-3 SKU identification with a LoRA fine-tuned SigLIP encoder and FAISS.</li>
+                        <li>Needleman&ndash;Wunsch alignment for shelf ordering with DBSCAN row grouping and perspective correction; 79.7% end-to-end accuracy on genuine in-store imagery.</li>
+                    </ul>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">CCTV Revenue Verification</h4>
+                    <p class="publication-authors">Production &middot; Video Analytics</p>
+                    <p class="publication-venue">2026</p>
+                    <ul class="bullet-list">
+                        <li>RF-DETR with frame sampling and temporal voting: 100% video-level detection accuracy across 15 held-out videos (frame mAP50 = 0.96); supervised an intern through the full experimental cycle.</li>
+                    </ul>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">LLM Quality Assurance for Marketing Artwork</h4>
+                    <p class="publication-authors">Proof of Concept &middot; LLM</p>
+                    <p class="publication-venue">2026</p>
+                    <ul class="bullet-list">
+                        <li>Paired an LLM with deterministic numeric checks for auditable pass/fail decisions; built the token-cost model and authored the SOW and design document.</li>
+                    </ul>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">Thai-Language Document Retrieval for Government Forms</h4>
+                    <p class="publication-authors">Proof of Concept &middot; Vision-Language Retrieval</p>
+                    <p class="publication-venue">2026</p>
+                    <ul class="bullet-list">
+                        <li>Compared OCR-based and OCR-free retrieval on a benchmark of 84 real documents (7 types, 111 queries), with 10,000-iteration paired bootstrap confidence intervals on every comparison.</li>
+                        <li>Adapted a 2B-parameter late-interaction retriever (ColQwen2) to Thai with LoRA on one 8 GB laptop GPU, fully offline: nDCG@10 rose from <strong>0.482 to 0.923</strong> (+44.1 points, 95% CI +35.4 to +52.8).</li>
+                        <li>Recommended an OCR-plus-lexical route for deployment (nDCG@10 = 0.981, no GPU at serving time), delivered as a technical report and executive brief with cost models.</li>
+                    </ul>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">Alpha-AI: Local-First Multi-Agent Data Science System</h4>
+                    <p class="publication-authors">Independent project</p>
+                    <ul class="bullet-list">
+                        <li>Nine specialised agents run end-to-end data science workflows (data intake, EDA, feature engineering, modelling, evaluation, reporting and paper writing), coordinating through an automated review loop and human approval gates, powered by local LLMs via Ollama so data never leaves the machine.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title">Research Experience</h3>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">Postdoctoral Researcher (part-time)</h4>
+                    <p class="publication-authors">Naresuan University &amp; Natural History Museum, London</p>
+                    <p class="publication-venue">May 2024 &ndash; Present</p>
+                    <ul class="bullet-list">
+                        <li>Developing a beetle classification model for the Natural History Museum&rsquo;s SITE-100 programme; manuscript in preparation.</li>
+                        <li>First-author manuscript on a DNA-based inventory of Thai Coleoptera submitted to <em>Insect Systematics and Diversity</em>.</li>
+                    </ul>
                 </div>
 
                 <div class="publication-item">
                     <h4 class="publication-title">Postdoctoral Researcher</h4>
                     <p class="publication-authors">Chiang Mai University, Thailand</p>
-                    <p class="publication-venue">January 2025 – November 2025</p>
-                    <p>eDNA Monitoring of Invasive Fish Species - Developed detection protocols for silver carp and common carp in Thai river systems.</p>
+                    <p class="publication-venue">2023 &ndash; 2024</p>
+                    <ul class="bullet-list">
+                        <li>Environmental-DNA assays for invasive fish in Thai rivers supporting national invasive-species management (<em>iScience</em>, <em>NeoBiota</em>, 2026).</li>
+                    </ul>
                 </div>
 
                 <div class="publication-item">
-                    <h4 class="publication-title">PhD Researcher</h4>
-                    <p class="publication-authors">Natural History Museum & Imperial College London, UK</p>
-                    <p class="publication-venue">2018 – 2025</p>
-                    <p>Developed ML models achieving 99.98% accuracy in ASV authentication, processed 170,000+ samples, built computer vision algorithms for beetle identification.</p>
+                    <h4 class="publication-title">Doctoral Research</h4>
+                    <p class="publication-authors">Imperial College London &amp; Natural History Museum, UK</p>
+                    <p class="publication-venue">2018 &ndash; 2023</p>
+                    <ul class="bullet-list">
+                        <li>Built automated HPC pipelines for sequence retrieval, BLAST, alignment, tree construction and data management, processing over 170,000 biological samples; developed machine-learning methods for sequence authentication and image-based specimen classification.</li>
+                        <li>Integrated 10,466 sequences into a global phylogenetic analysis of tropical forest beetle communities; first author on a phylogenetic authentication method in <em>Molecular Ecology Resources</em>.</li>
+                    </ul>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">Earlier Research</h4>
+                    <p class="publication-authors">Chiang Mai University, Thailand</p>
+                    <p class="publication-venue">2014 &ndash; 2017</p>
+                    <ul class="bullet-list">
+                        <li>DNA barcoding with high-resolution melting for authentication of Thai herbal products (<em>Proc. R. Soc. B</em>).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title">Leadership &amp; Mentoring</h3>
+
+                <ul class="bullet-list">
+                    <li><strong>Technical coach, Gosoft &times; Chulalongkorn University Capstone Programme (2026):</strong> guided two teams of computer engineering students (10 in total) on &ldquo;AI Skin Analyser&rdquo; and &ldquo;AI Product on Shelves&rdquo; through problem formulation, dataset and ground-truth design, methodology and evaluation.</li>
+                    <li><strong>Mentor, data science internship programme (2026):</strong> supervised an intern through a full computer-vision proof of concept, from experimental design and annotation to evaluation and reporting.</li>
+                    <li><strong>Knowledge transfer:</strong> architecture documentation, pipeline knowledge-transfer material and a user manual, contributing to seven items on the organisational IT roadmap in H1/2026.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title">Education</h3>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">PhD in Life Sciences</h4>
+                    <p class="publication-authors">Imperial College London, United Kingdom</p>
+                    <p class="publication-venue">2018 &ndash; 2023</p>
+                    <p>Thesis: &ldquo;Biodiversity of beetles: The phylogenetic composition of beetle communities across tropical forests of the world&rdquo;</p>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">M.Sc. Biology (GPA: 4.00)</h4>
+                    <p class="publication-authors">Chiang Mai University, Thailand</p>
+                    <p class="publication-venue">2013 &ndash; 2015</p>
+                    <p>Thesis: &ldquo;Identification of Medicinal Plants in Zingiberaceae by Barcode DNA High-Resolution Melting Analysis (Bar-HRM) Method&rdquo;</p>
+                </div>
+
+                <div class="publication-item">
+                    <h4 class="publication-title">B.Sc. Biology (GPA: 3.60, 1st Class Honours)</h4>
+                    <p class="publication-authors">Chiang Mai University, Thailand</p>
+                    <p class="publication-venue">2009 &ndash; 2012</p>
                 </div>
             </section>
 
             <section class="section">
                 <h3 class="section-title">Technical Skills</h3>
+
+                <h4 class="publication-title">Generative &amp; Agentic AI</h4>
+                <div class="skills-container">
+                    <span class="skill-tag">Multimodal LLM pipelines</span>
+                    <span class="skill-tag">Multi-agent orchestration</span>
+                    <span class="skill-tag">Local LLM serving (Ollama)</span>
+                    <span class="skill-tag">Hybrid LLM + deterministic verification</span>
+                    <span class="skill-tag">Prompt engineering</span>
+                    <span class="skill-tag">Abstention design</span>
+                    <span class="skill-tag">Token-cost modelling</span>
+                </div>
+                <h4 class="publication-title">Vision-Language &amp; Retrieval</h4>
+                <div class="skills-container">
+                    <span class="skill-tag">SigLIP</span>
+                    <span class="skill-tag">DINOv3</span>
+                    <span class="skill-tag">ColQwen2 / ColPali</span>
+                    <span class="skill-tag">FAISS</span>
+                    <span class="skill-tag">BM25 &amp; hybrid search</span>
+                    <span class="skill-tag">LightGBM reranking</span>
+                    <span class="skill-tag">Contrastive &amp; triplet learning</span>
+                    <span class="skill-tag">Hard-negative mining</span>
+                </div>
+                <h4 class="publication-title">Deep Learning &amp; Vision</h4>
+                <div class="skills-container">
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Hugging Face</span>
+                    <span class="skill-tag">LoRA / PEFT</span>
+                    <span class="skill-tag">YOLO11</span>
+                    <span class="skill-tag">RT-DETR / RF-DETR</span>
+                    <span class="skill-tag">SAM</span>
+                    <span class="skill-tag">SAHI</span>
+                    <span class="skill-tag">OpenCV</span>
+                </div>
+                <h4 class="publication-title">Evaluation &amp; Statistics</h4>
+                <div class="skills-container">
+                    <span class="skill-tag">nDCG / Recall@k / mAP</span>
+                    <span class="skill-tag">Paired bootstrap CIs</span>
+                    <span class="skill-tag">Ablation &amp; error analysis</span>
+                    <span class="skill-tag">Experimental design</span>
+                    <span class="skill-tag">XGBoost</span>
+                </div>
+                <h4 class="publication-title">Engineering &amp; MLOps</h4>
                 <div class="skills-container">
                     <span class="skill-tag">Python</span>
-                    <span class="skill-tag">R Programming</span>
-                    <span class="skill-tag">Machine Learning</span>
-                    <span class="skill-tag">Deep Learning</span>
-                    <span class="skill-tag">Data Mining</span>
-                    <span class="skill-tag">Statistical Modeling</span>
-                    <span class="skill-tag">Predictive Analytics</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Argo Workflows</span>
+                    <span class="skill-tag">MLflow</span>
+                    <span class="skill-tag">Bitbucket Pipelines</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Streamlit</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">HPC</span>
+                    <span class="skill-tag">ETL pipelines</span>
+                </div>
+                <h4 class="publication-title">Life Sciences</h4>
+                <div class="skills-container">
                     <span class="skill-tag">Bioinformatics</span>
                     <span class="skill-tag">DNA Barcoding</span>
                     <span class="skill-tag">Metabarcoding</span>
-                    <span class="skill-tag">Computer Vision</span>
-                    <span class="skill-tag">Git/GitHub</span>
-                    <span class="skill-tag">QGIS</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Big Data Analytics</span>
+                    <span class="skill-tag">eDNA</span>
+                    <span class="skill-tag">Phylogenetics</span>
                 </div>
             </section>
         </main>
