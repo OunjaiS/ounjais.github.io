@@ -10,10 +10,13 @@ Visit: **https://ounjais.github.io**
 
 ```
 ├── index.html          # About page (homepage)
-├── publications.html   # Publications list
-├── cv.html            # Curriculum Vitae
-├── achievements.html  # Awards & Certifications
-├── contact.html       # Contact information
+├── experience.html     # Industry & research experience, leadership, skills
+├── projects.html       # Flagship AI projects
+├── publications.html   # Publications grouped by research area
+├── education.html      # Degrees, awards, certifications, training
+├── contact.html        # Contact information + CV download
+├── cv.html             # Redirect to experience.html (old URL)
+├── achievements.html   # Redirect to education.html (old URL)
 ├── assets/
 │   └── css/
 │       └── style.css  # Main stylesheet
